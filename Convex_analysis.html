@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convex Analysis Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #333;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .note {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 5px solid #333;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Convex Analysis Notes</h1>
+</header>
+
+<nav>
+    <a href="#introduction">Introduction</a>
+    <a href="#definitions">Definitions</a>
+    <a href="#theorems">Theorems</a>
+    <a href="#examples">Examples</a>
+    <a href="#applications">Applications</a>
+</nav>
+
+<div class="container">
+    <section id="introduction" class="section">
+        <h2>Introduction</h2>
+        <p>Convex analysis is a branch of mathematics that studies convex sets and convex functions. It plays a crucial role in optimization theory, economics, and many other fields.</p>
+        <div class="note">
+            <p><strong>Note:</strong> Convex analysis provides tools for analyzing optimization problems where the objective function is convex, and the feasible set is also convex.</p>
+        </div>
+    </section>
+
+    <section id="definitions" class="section">
+        <h2>Definitions</h2>
+        <p>A set \(C\) is convex if for every pair of points \(x, y \in C\), the entire line segment between them lies within the set. Formally, this means:</p>
+        <p>
+            \[
+            \lambda x + (1-\lambda) y \in C \quad \text{for all} \quad \lambda \in [0, 1]
+            \]
+        </p>
+        <div class="note">
+            <p><strong>Example:</strong> The set of all points inside a circle is convex, but the set of points outside the circle is not.</p>
+        </div>
+    </section>
+
+    <section id="theorems" class="section">
+        <h2>Theorems</h2>
+        <p>One of the fundamental theorems in convex analysis is the <strong>Jensen's Inequality</strong>, which states that for a convex function \(f\), the following holds for any points \(x_1, x_2, \dots, x_n\) and weights \( \lambda_1, \lambda_2, \dots, \lambda_n \) with \( \sum_{i=1}^n \lambda_i = 1 \):</p>
+        <p>
+            \[
+            f\left( \sum_{i=1}^n \lambda_i x_i \right) \leq \sum_{i=1}^n \lambda_i f(x_i)
+            \]
+        </p>
+    </section>
+
+    <section id="examples" class="section">
+        <h2>Examples</h2>
+        <p>Consider the convex function \( f(x) = x^2 \). This is convex because its second derivative \( f''(x) = 2 \) is positive.</p>
+    </section>
+
+    <section id="applications" class="section">
+        <h2>Applications</h2>
+        <p>Convex analysis is widely used in optimization problems, especially in linear programming and convex programming. It's also applicable in economics, where it helps model situations involving diminishing returns and cost minimization.</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Convex Analysis Notes</p>
+</footer>
+
+</body>
+</html>
